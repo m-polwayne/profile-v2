@@ -208,3 +208,93 @@ body.dark-mode a:hover {
     background-color: #333;
     color: #f4f4f4;
 }
+
+/* Projects Section */
+.project-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Ensures the content wraps when necessary */
+    padding-bottom: 20px; /* Adds some space between the project and the border */
+    border-bottom: 1px solid #ccc; /* Adds a light gray border between projects */
+}
+
+.project-thumbnail {
+    width: auto;
+    height: 5cm;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.project-details {
+    flex: 1;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    .project-item {
+        flex-direction: column; /* Stack the image on top of the text */
+        align-items: center; /* Center content on mobile */
+    }
+
+    .project-thumbnail {
+        margin-right: 0;
+        margin-bottom: 15px;
+        height: auto; /* Reset height to auto on mobile for flexibility */
+        width: 100%; /* Make image full width for mobile */
+        max-width: 300px; /* Restrict max-width to avoid oversizing */
+    }
+}
+
+/* Adds some space between the projects */
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Logo for desktop */
+.logo {
+    display: block;
+    width: 150px; /* Adjust as needed */
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    .logo {
+        display: none; /* Hide logo on mobile screens */
+    }
+}
+
+/* For larger screens, the logo will be visible */
+@media (min-width: 769px) {
+    .logo {
+        display: block; /* Ensure the logo is shown on larger screens */
+    }
+}
+
+/* About Me Section */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+}
+
+/* Logo styling */
+.about-logo {
+    width: 300px; /* Adjust the size of the logo */
+    margin-top: 20px; /* Add space between the profile picture and logo */
+    display: block;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    .about-logo {
+        display: none; /* Hide the logo on mobile */
+    }
+}
